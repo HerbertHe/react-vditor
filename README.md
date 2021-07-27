@@ -2,9 +2,9 @@
 
 Vditor in React
 
-## 构建
+## Development
 
-本仓库使用 pnpm 作为包管理工具
+The project packages are managed by pnpm
 
 ```bash
 npm install -g pnpm
@@ -13,3 +13,17 @@ pnpm install
 
 pnpm add tsup -D
 ```
+
+## Scripts
+
+```bash
+# for dev
+pnpm dev
+
+# for build
+pnpm build
+```
+
+## License
+
+MIT &copy; [Herbert He](https://github.com/HerbertHe)
