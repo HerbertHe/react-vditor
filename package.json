@@ -1,0 +1,44 @@
+{
+  "name": "react-vditor",
+  "version": "0.0.1",
+  "description": "Vditor in React",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HerbertHe/react-vditor.git"
+  },
+  "keywords": [
+    "Vditor",
+    "React",
+    "Nuco"
+  ],
+  "author": {
+    "name": "Herbert He",
+    "email": "Herbert.He0229@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HerbertHe/react-vditor/issues"
+  },
+  "homepage": "https://github.com/HerbertHe/react-vditor#readme",
+  "devDependencies": {
+    "@types/react": "^17.0.15",
+    "@types/react-dom": "^17.0.9",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tsup": "^4.12.5",
+    "typescript": "^4.3.5",
+    "vditor": "^3.8.6"
+  }
+}
