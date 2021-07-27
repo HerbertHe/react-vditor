@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "dev": "tsup --watch",
-    "build": "tsup",
+    "build": "tsup --jsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -1,3 +1,7 @@
+// export components
+export { default as VditorEditor } from "./components/Vditor"
+
+// expoetr types
 export * from "./types/options/cache"
 export * from "./types/options/classes"
 export * from "./types/options/comment"

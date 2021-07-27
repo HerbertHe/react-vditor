@@ -8,5 +8,5 @@ export const tsup: Options = {
     dts: true,
     format: ["cjs", "esm"],
     legacyOutput: true,
-    clean: true
+    clean: true,
 }
