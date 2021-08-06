@@ -1,3 +1,5 @@
+import { IObject } from "./object"
+
 /**
  * https://github.com/Vanessa219/vditor#optionshint
  */
@@ -7,7 +9,7 @@ export interface IHint {
     /**
      * https://github.com/88250/lute/blob/master/parse/emoji_map.go
      */
-    emoji?: object
+    emoji?: IObject
     emojiTail?: string
     emojiPath?: string
     extend?: Array<IHintExtend>

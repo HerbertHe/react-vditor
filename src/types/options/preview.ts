@@ -35,7 +35,7 @@ export interface IPreviewMarkdown {
     codeBlockPreview?: boolean
     mathBlockPreview?: boolean
     paragraphBeginningSpace?: boolean
-    sanitize?: string
+    sanitize?: boolean
     listStyle?: boolean
     linkBase?: string
     linkPrefix?: string

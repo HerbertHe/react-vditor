@@ -1,9 +1,12 @@
 /**
  * https://github.com/Vanessa219/vditor#optionscounter
  */
-export interface ICounter {
+
+export interface ICounterBase {
     enable?: boolean
-    after?: (length: number, counter?: ICounter) => void
     max?: number
     type?: "markdown" | "text"
+}
+export interface ICounter extends ICounterBase {
+    after?(length: number, counter?: ICounterBase): void
 }

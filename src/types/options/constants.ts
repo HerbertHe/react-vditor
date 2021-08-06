@@ -1,4 +1,4 @@
-import { IPreviewMath } from "./preview"
+import { IPreviewMarkdown, IPreviewMath } from "./preview"
 
 /**
  * https://github.com/Vanessa219/vditor/blob/master/src/ts/constants.ts
@@ -146,7 +146,7 @@ export abstract class Constants {
         "mathematica",
     ]
     public static readonly CDN = `https://cdn.jsdelivr.net/npm/vditor@${VDITOR_VERSION}`
-    public static readonly MARKDOWN_OPTIONS = {
+    public static readonly MARKDOWN_OPTIONS: IPreviewMarkdown = {
         autoSpace: false,
         codeBlockPreview: true,
         fixTermTypo: false,

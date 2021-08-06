@@ -3,10 +3,14 @@
  * https://github.com/Vanessa219/vditor#optionscomment
  */
 export interface IComment {
-    enable?: boolean
-    // TODO
-    // add?: (id: string, text: string, commentsData: any) => void
-    remove?: (ids: Array<string>) => void
-    scroll?: (top: number) => void
-    // adjustTop?: (commentsData: any) => void
+    enable: boolean
+    add?(id: string, text: string, commentsData: ICommentData[]): void
+    remove?(ids: string[]): void
+    scroll?(top: number): void
+    adjustTop?(commentsData: ICommentData[]): void
+}
+
+export interface ICommentData {
+    id: string
+    top: number
 }

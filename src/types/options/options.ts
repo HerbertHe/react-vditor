@@ -13,26 +13,36 @@ import { IResize } from "./resize"
 import { IToolbar, IToolbarConfig } from "./toolbar"
 import { IUpload } from "./upload"
 
+export type LangType = "zh_CN" | "en_US" | "ja_JP" | "ko_KR" | "ru_RU" | "zh_TW"
+
+export type ModeType = "ir" | "sv" | "wysiwysg"
+
+export type ThemeType = "classic" | "dark"
+
+export type IconType = "ant" | "material"
+
 /**
  * https://github.com/Vanessa219/vditor#options
+ *
+ * https://github.com/Vanessa219/vditor/blob/328d39830e221cfa60b1cecb8cf0f579352c3e00/types/index.d.ts#L562
  */
 export interface IOptions extends IEvents {
-    // TODO
+    _lutePath?: string
     i18n?: ITips
     undoDelay?: number
     height?: string
     minHeight?: string
     width?: string
     placeholder?: string
-    lang?: "zh_CN" | "en_US" | "ja_JP" | "ko_KR" | "ru_RU" | "zh_TW"
-    // tab:
+    lang?: LangType
+    tab?: string
     typewriterMode?: boolean
     cdn?: string
-    mode?: "ir" | "sv" | "wysiwysg"
+    mode?: ModeType
     debugger?: boolean
     value?: ""
-    theme?: "classic" | "dark"
-    icon?: "ant" | "material"
+    theme?: ThemeType
+    icon?: IconType
     toolbar?: IToolbar
     toolbarConfig?: IToolbarConfig
     counter?: ICounter
