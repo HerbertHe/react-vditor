@@ -57,7 +57,7 @@ export interface IPreviewTheme {
 export interface IPreviewMath {
     inlineDigit?: boolean
     macros?: object
-    engine?: "KaTex" | "MathJax"
+    engine?: "KaTeX" | "MathJax"
 }
 
 /**

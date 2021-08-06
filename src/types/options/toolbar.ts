@@ -49,7 +49,7 @@ export interface IToolbarItemCustom {
     // TODO IVditor
     click?: (event: Event, vditor: any) => void
     className?: string
-    toolbar?: Array<IToolbar>
+    toolbar?: IToolbar
 }
 
 export type IToolbarItem = IToolbarItemEnumerated | IToolbarItemCustom

@@ -1,7 +1,9 @@
 import React, { FC, createRef } from "react"
+import { IOptions } from "../types/options"
 
 export interface IVditorEditorProps {
     key: string
+    options?: IOptions
     // TODO 绑定返回 vditor 实例
     // bindVditor?: () => any
 }
