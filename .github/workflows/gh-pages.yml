@@ -18,9 +18,8 @@ jobs:
       - name: Install And Build
         run: |
           cd __test__
-          npm install -g pnpm
-          pnpm install
-          pnpm build
+          npm install
+          npm run build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.0.0
         with:
