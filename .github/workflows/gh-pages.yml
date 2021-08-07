@@ -19,10 +19,12 @@ jobs:
         run: |
           cd __test__
 
-      - name: Install Dependencies
+      - name: Install And Build
         run: |
           npm install
-
-      - name: Build
-        run: |
-          npm build
+          npm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.0.0
+        with:
+          branch: gh-pages
+          folder: docs
