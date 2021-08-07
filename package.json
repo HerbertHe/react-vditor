@@ -1,6 +1,6 @@
 {
   "name": "react-vditor",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Vditor in React",
   "main": "lib/esm/index.js",
   "typings": "lib/index.d.ts",
