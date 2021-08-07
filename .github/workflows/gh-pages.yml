@@ -15,12 +15,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Cd dir
-        run: |
-          cd __test__
-
       - name: Install And Build
         run: |
+          cd __test__
           npm install -g pnpm
           pnpm install
           pnpm build
