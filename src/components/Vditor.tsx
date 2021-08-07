@@ -1,5 +1,6 @@
-import React, { FC, createRef } from "react"
+import React, { FC, createRef, useEffect } from "react"
 import { IOptions } from "../types/options"
+import Vditor from "vditor"
 
 export interface IVditorEditorProps {
     key: string
@@ -8,8 +9,15 @@ export interface IVditorEditorProps {
     // bindVditor?: () => any
 }
 
-const VditorEditor: FC<IVditorEditorProps> = ({ key }) => {
+const VditorEditor: FC<IVditorEditorProps> = ({ key, options }) => {
     const vditorRef = createRef<HTMLDivElement>()
+
+    useEffect(() => {
+        // initial Vditor
+        const id = `vditor-editor-${key}`
+        // 在此应该合并 options
+        const vditor = new Vditor(id, options)
+    }, [])
 
     return <div id={`vditor-editor-${key}`} ref={vditorRef}></div>
 }

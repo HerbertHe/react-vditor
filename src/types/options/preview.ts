@@ -1,3 +1,5 @@
+import { IObject } from "./object"
+
 /**
  * https://github.com/Vanessa219/vditor#optionspreview
  */
@@ -46,8 +48,8 @@ export interface IPreviewMarkdown {
  * https://github.com/Vanessa219/vditor#optionspreviewtheme
  */
 export interface IPreviewTheme {
-    current?: string
-    list?: object
+    current: string
+    list?: IObject
     path?: string
 }
 
@@ -72,10 +74,10 @@ export type IPreviewAction =
 
 export interface IPreviewActionCustom {
     key: string
-    text?: string
+    text: string
     tooltip?: string
     className?: string
-    click?: (key: string) => void
+    click(key: string): void
 }
 
 export type IPreviewActions = Array<IPreviewAction | IPreviewActionCustom>

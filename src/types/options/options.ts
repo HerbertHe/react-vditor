@@ -15,7 +15,7 @@ import { IUpload } from "./upload"
 
 export type LangType = "zh_CN" | "en_US" | "ja_JP" | "ko_KR" | "ru_RU" | "zh_TW"
 
-export type ModeType = "ir" | "sv" | "wysiwysg"
+export type ModeType = "ir" | "sv" | "wysiwyg"
 
 export type ThemeType = "classic" | "dark"
 
@@ -31,7 +31,7 @@ export interface IOptions extends IEvents {
     i18n?: ITips
     undoDelay?: number
     height?: string
-    minHeight?: string
+    minHeight?: number
     width?: string
     placeholder?: string
     lang?: LangType

@@ -3,7 +3,7 @@
  */
 
 export interface ICounterBase {
-    enable?: boolean
+    enable: boolean
     max?: number
     type?: "markdown" | "text"
 }
