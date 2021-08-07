@@ -1,7 +1,21 @@
-import { IVditorDevtools, IVditorOutline } from "./ivditor"
+import {
+    IVditorCounter,
+    IVditorDevtools,
+    IVditorHint,
+    IVditorIR,
+    IVditorOutline,
+    IVditorPreview,
+    IVditorResize,
+    IVditorSV,
+    IVditorTip,
+    IVditorToolbar,
+    IVditorUndo,
+    IVditorUpload,
+    IVditorWYSIWYG,
+    Lute,
+} from "./ivditor"
 import { IOptions, ModeType } from "./options"
 
-// TODO
 declare module "*.svg"
 declare module "*.png"
 
@@ -14,8 +28,19 @@ export interface IVditor {
     element: HTMLElement
     options: IOptions
     originalInnerHTML: string
-    // lute: Lute
+    lute: Lute
     currentMode: ModeType
     devtools?: IVditorDevtools
-    outline?: IVditorOutline
+    outline: IVditorOutline
+    toolbar?: IVditorToolbar
+    preview?: IVditorPreview
+    counter?: IVditorCounter
+    resize?: IVditorResize
+    hint: IVditorHint
+    tip: IVditorTip
+    upload?: IVditorUpload
+    undo?: IVditorUndo
+    wysiwyg?: IVditorWYSIWYG
+    ir?: IVditorIR
+    sv?: IVditorSV
 }
