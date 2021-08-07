@@ -76,7 +76,7 @@ export const defaultOptions: IOptions = {
     fullscreen: {
         index: 90,
     },
-    height: "auto",
+    height: "500px",
     hint: {
         delay: 200,
         emoji: {
@@ -179,4 +179,50 @@ export const defaultOptions: IOptions = {
     },
     value: "",
     width: "auto",
+}
+
+const cleanToolbar: IToolbar = [
+    "emoji",
+    "headings",
+    "bold",
+    "italic",
+    "strike",
+    "link",
+    "|",
+    "list",
+    "ordered-list",
+    "check",
+    "outdent",
+    "indent",
+    "|",
+    "quote",
+    "line",
+    "code",
+    "inline-code",
+    "insert-before",
+    "insert-after",
+    "|",
+    "upload",
+    "record",
+    "table",
+    "|",
+    "undo",
+    "redo",
+    "|",
+    "fullscreen",
+]
+
+export const defaultIROptions: IOptions = {
+    mode: "ir",
+    toolbar: cleanToolbar,
+}
+
+export const defaultSVOptions: IOptions = {
+    mode: "sv",
+    toolbar: cleanToolbar
+}
+
+export const defaultWYSIWYGOptions: IOptions = {
+    mode: "wysiwyg",
+    toolbar: cleanToolbar
 }

@@ -1,26 +1,28 @@
 import React, { FC, createRef, useEffect } from "react"
 import Vditor from "vditor"
 
-import { IOptions } from "../types/options"
+import { IOptions, defaultOptions } from "../types/options"
 
 export interface IVditorEditorProps {
-    key: string
+    keyID: string
     options?: IOptions
     // TODO 绑定返回 vditor 实例
     // bindVditor?(): void
 }
 
-const VditorEditor: FC<IVditorEditorProps> = ({ key, options }) => {
+const VditorEditor: FC<IVditorEditorProps> = ({ keyID, options }) => {
     const vditorRef = createRef<HTMLDivElement>()
 
     useEffect(() => {
         // initial Vditor
-        const id = `vditor-editor-${key}`
-        // 在此应该合并 options
-        const vditor = new Vditor(id, options)
+        const id = `vditor-editor-${keyID}`
+        let opts = !!options ? options : defaultOptions
+        const vditor = new Vditor(id, opts)
+        console.log("Editor")
+        console.log(vditor)
     }, [])
 
-    return <div id={`vditor-editor-${key}`} ref={vditorRef}></div>
+    return <div id={`vditor-editor-${keyID}`} ref={vditorRef}></div>
 }
 
 export default VditorEditor

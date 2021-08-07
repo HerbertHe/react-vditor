@@ -1,9 +1,10 @@
 import { IPreviewMarkdown, IPreviewMath } from "./preview"
+import { devDependencies } from "../../../package.json"
 
 /**
  * https://github.com/Vanessa219/vditor/blob/master/src/ts/constants.ts
  */
-declare const VDITOR_VERSION: string
+const VDITOR_VERSION: string = devDependencies["vditor"].replace("^", "")
 
 const _VDITOR_VERSION = VDITOR_VERSION
 
