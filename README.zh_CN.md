@@ -2,13 +2,13 @@
 
 [English](./README.md) | [简体中文](./README.zh_CN.md)
 
-Vditor Components for React!
+React 开发中使用的 Vditor 组件
 
-> About Vditor, see [Vanessa219/vditor](https://github.com/Vanessa219/vditor)
+> 关于 Vditor 的细节 [Vanessa219/vditor](https://github.com/Vanessa219/vditor)
 
-## Usage
+## 使用方法
 
-- Add dependencies
+- 安装依赖
 
 ```bash
 npm install vditor react-vditor
@@ -18,7 +18,7 @@ yarn add vditor react-vditor
 pnpm install vditor react-vditor
 ```
 
-- Import component
+- 引入组件
 
 ```ts
 import React, { FC, useState, useEffect } from "react"
@@ -39,34 +39,14 @@ const TestVditorEditor: FC = () => {
 export default TestVditorEditor
 ```
 
-## What is react-vditor?
+## 什么是 react-vditor?
 
-## Vditor Components of react-vditor
+## react-vditor 提供的组件
 
-## Props of Vditor Components
+## react-vditor 组件提供的 props
 
-## Development
+## react-vditor 开发指南
 
-The project packages are managed by pnpm
-
-```bash
-npm install -g pnpm
-
-pnpm install
-
-pnpm add tsup -D
-```
-
-## Scripts
-
-```bash
-# for dev
-pnpm dev
-
-# for build
-pnpm build
-```
-
-## License
+## 许可证
 
 MIT &copy; [Herbert He](https://github.com/HerbertHe)
