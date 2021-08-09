@@ -6,7 +6,11 @@ import { IVditorEditorProps } from "./Vditor"
 
 export interface IVditorSVEditorProps extends IVditorEditorProps {}
 
-const VditorSVEditor: FC<IVditorSVEditorProps> = ({ keyID, options }) => {
+const VditorSVEditor: FC<IVditorSVEditorProps> = ({
+    keyID,
+    options,
+    bindVditor,
+}) => {
     const vditorRef = createRef<HTMLDivElement>()
 
     useEffect(() => {
@@ -14,8 +18,9 @@ const VditorSVEditor: FC<IVditorSVEditorProps> = ({ keyID, options }) => {
         const id = `vditor-editor-sv-${keyID}`
         let opts = !!options ? options : defaultSVOptions
         const vditor = new Vditor(id, opts)
-        console.log("Editor")
-        console.log(vditor)
+        if (!!bindVditor) {
+            bindVditor(vditor)
+        }
     }, [])
 
     return <div id={`vditor-editor-sv-${keyID}`} ref={vditorRef}></div>

@@ -6,11 +6,14 @@ import { IOptions, defaultOptions } from "../types/options"
 export interface IVditorEditorProps {
     keyID: string
     options?: IOptions
-    // TODO 绑定返回 vditor 实例
-    // bindVditor?(): void
+    bindVditor?(vditor: Vditor): void
 }
 
-const VditorEditor: FC<IVditorEditorProps> = ({ keyID, options }) => {
+const VditorEditor: FC<IVditorEditorProps> = ({
+    keyID,
+    options,
+    bindVditor,
+}) => {
     const vditorRef = createRef<HTMLDivElement>()
 
     useEffect(() => {
@@ -18,8 +21,9 @@ const VditorEditor: FC<IVditorEditorProps> = ({ keyID, options }) => {
         const id = `vditor-editor-${keyID}`
         let opts = !!options ? options : defaultOptions
         const vditor = new Vditor(id, opts)
-        console.log("Editor")
-        console.log(vditor)
+        if (!!bindVditor) {
+            bindVditor(vditor)
+        }
     }, [])
 
     return <div id={`vditor-editor-${keyID}`} ref={vditorRef}></div>

@@ -8,14 +8,16 @@ specifiers:
   cross-env: ^7.0.3
   react: ^17.0.0
   react-dom: ^17.0.0
-  react-vditor: ^0.0.1
+  react-vditor: ^0.1.0
   typescript: ^4.3.2
+  vditor: ^3.8.6
   vite: ^2.4.4
 
 dependencies:
   react: registry.nlark.com/react/17.0.2
   react-dom: registry.nlark.com/react-dom/17.0.2_react@17.0.2
   react-vditor: link:..
+  vditor: 3.8.6
 
 devDependencies:
   '@types/node': registry.nlark.com/@types/node/16.4.13
@@ -58,6 +60,10 @@ packages:
       shebang-command: 2.0.0
       which: 2.0.2
     dev: true
+
+  /diff-match-patch/1.0.5:
+    resolution: {integrity: sha512-IayShXAgj/QMXgB0IWmKx+rOPuGMhqm5w6jvFxmVenXKIzRqTAAsbBPT3kWQeGANj3jGgvcvv4yK6SxqYmikgw==}
+    dev: false
 
   /escalade/3.1.1:
     resolution: {integrity: sha1-2M/ccACWXFoBdLSoLqpcBVJ0LkA=, tarball: escalade/download/escalade-3.1.1.tgz}
@@ -171,6 +177,12 @@ packages:
     resolution: {integrity: sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=, tarball: to-fast-properties/download/to-fast-properties-2.0.0.tgz}
     engines: {node: '>=4'}
     dev: true
+
+  /vditor/3.8.6:
+    resolution: {integrity: sha512-KZSmg593dTx/BmX9HdXcZCLi5stkJvW3AHVq4gOVvA00JnZngT7sjlX8WlfWbLe0A80UzelNSVXff3yoyljRAA==}
+    dependencies:
+      diff-match-patch: 1.0.5
+    dev: false
 
   /which/2.0.2:
     resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}

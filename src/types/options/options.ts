@@ -30,7 +30,7 @@ export interface IOptions extends IEvents {
     _lutePath?: string
     i18n?: ITips
     undoDelay?: number
-    height?: string
+    height?: number
     minHeight?: number
     width?: string
     placeholder?: string
@@ -76,7 +76,7 @@ export const defaultOptions: IOptions = {
     fullscreen: {
         index: 90,
     },
-    height: "500px",
+    height: 300,
     hint: {
         delay: 200,
         emoji: {
@@ -178,7 +178,7 @@ export const defaultOptions: IOptions = {
         withCredentials: false,
     },
     value: "",
-    width: "auto",
+    width: "100%",
 }
 
 const cleanToolbar: IToolbar = [
@@ -215,14 +215,20 @@ const cleanToolbar: IToolbar = [
 export const defaultIROptions: IOptions = {
     mode: "ir",
     toolbar: cleanToolbar,
+    width: "100%",
+    height: 300,
 }
 
 export const defaultSVOptions: IOptions = {
     mode: "sv",
-    toolbar: cleanToolbar
+    toolbar: cleanToolbar,
+    width: "100%",
+    height: 300,
 }
 
 export const defaultWYSIWYGOptions: IOptions = {
     mode: "wysiwyg",
-    toolbar: cleanToolbar
+    toolbar: cleanToolbar,
+    width: "100%",
+    height: 300,
 }

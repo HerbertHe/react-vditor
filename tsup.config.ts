@@ -7,6 +7,6 @@ export const tsup: Options = {
     sourcemap: true,
     dts: true,
     format: ["cjs", "esm"],
-    legacyOutput: true,
+    legacyOutput: false,
     clean: true,
 }

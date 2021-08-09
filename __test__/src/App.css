@@ -1,5 +1,6 @@
 .App {
     width: 100%;
+    box-sizing: border-box;
     padding: 0 20px;
     display: flex;
     flex-direction: row;
@@ -10,6 +11,8 @@
 
 .App .Container {
     flex: 1;
+    box-sizing: border-box;
+    padding: 0 5px;
     min-width: 500px;
     display: flex;
     flex-direction: column;

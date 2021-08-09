@@ -16,9 +16,6 @@ import {
 } from "./ivditor"
 import { IOptions, ModeType } from "./options"
 
-declare module "*.svg"
-declare module "*.png"
-
 /**
  * 声明 Vditor
  *
