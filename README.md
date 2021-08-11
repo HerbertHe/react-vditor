@@ -4,6 +4,7 @@
 [![download](https://img.shields.io/npm/dm/react-vditor.svg)](https://www.npmjs.com/package/react-vditor)
 [![cnpmVersion](https://cnpmjs.org/badge/v/react-vditor.svg)](https://cnpmjs.org/package/react-vditor)
 [![cnpmDownload](https://cnpmjs.org/badge/d/react-vditor.svg)](https://cnpmjs.org/package/react-vditor)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHerbertHe%2Freact-vditor.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FHerbertHe%2Freact-vditor?ref=badge_shield)
 
 [English](./README.md) | [简体中文](./README.zh_CN.md)
 
@@ -96,3 +97,6 @@ pnpm link ..
 ## License
 
 MIT &copy; [Herbert He](https://github.com/HerbertHe)
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FHerbertHe%2Freact-vditor.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FHerbertHe%2Freact-vditor?ref=badge_large)
