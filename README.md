@@ -44,6 +44,8 @@ const TestVditorEditor: FC = () => {
 export default TestVditorEditor
 ```
 
+> see [demo](./__test__/) for more
+
 ## What is react-vditor?
 
 react-vditor is a wrapper of Vditor. Due to the reason that the Vditor is independent of frameworks, and we always need to initialize the Vditor in the lifecycle! Repeated operations are always boring! Thus, react-vditor provides some components for React that cover commonly used Vditor editors, makes it easy to use in React.
@@ -58,6 +60,7 @@ What's more, the react-vditor is well compatible with Vditor and provides some c
 | `<VditorIREditor />`      | Vditor IR editor (Syntax Sugar)      |
 | `<VditorSVEditor />`      | Vditor SV editor (Syntax Sugar)      |
 | `<VditorWYSIWYGEditor />` | Vditor WYSIWYG editor (Syntax Sugar) |
+| `<VditorPreview />`       | Vditor markdown preview component    |
 
 ## Props of Vditor Components
 
@@ -66,6 +69,14 @@ What's more, the react-vditor is well compatible with Vditor and provides some c
 | keyID      | string                                     | √        | ID of editor                  |
 | options    | [IOptions](./src/types/options/options.ts) | ×        | Vditor options                |
 | bindVditor | (vditor: Vditor): void                     | ×        | Bind Vditor instance to state |
+
+- Props of VditorPreview
+
+| props       | type                                              | required | description                    |
+| ----------- | ------------------------------------------------- | -------- | :----------------------------- |
+| markdown    | string                                            | √        | markdown content               |
+| options     | [IPreviewOptions](./src/types/options/preview.ts) | ×        | Vditor preview options         |
+| customClass | string                                            | ×        | custom preview component class |
 
 ## Development
 

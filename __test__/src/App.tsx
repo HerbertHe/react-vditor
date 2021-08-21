@@ -3,6 +3,7 @@ import "./App.css"
 
 import TestVditorEditor from "./components/TestVditorEditor"
 import TestVditorIREditor from "./components/TestVditorIREditor"
+import TestVditorPreivew from "./components/TestVditorPreview"
 import TestVditorSVEditor from "./components/TestVditorSVEditor"
 import TestVditorWYSIWYGEditor from "./components/TestVditorWYSIWYG"
 
@@ -24,6 +25,10 @@ function App() {
             <div className="Container">
                 <div className="Label">所见即所得Vditor编辑器 (WYSIWYG)</div>
                 <TestVditorWYSIWYGEditor />
+            </div>
+            <div className="Container">
+                <div className="Label">测试预览</div>
+                <TestVditorPreivew />
             </div>
         </div>
     )

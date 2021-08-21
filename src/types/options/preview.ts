@@ -18,6 +18,33 @@ export interface IPreview {
 }
 
 /**
+ * https://github.com/Vanessa219/vditor/blob/master/types/index.d.ts#L505
+ */
+export interface IPreviewOptions {
+    mode: "dark" | "light"
+    customEmoji?: IObject
+    lang?: keyof II18n
+    i18n?: ITips
+    lazyLoadImage?: string
+    emojiPath?: string
+    hljs?: IHljs
+    speech?: {
+        enable?: boolean
+    }
+    anchor?: number // 0: no render, 1: render left, 2: render right
+    math?: IMath
+    cdn?: string
+    markdown?: IMarkdownConfig
+    renderers?: ILuteRender
+    theme?: IPreviewTheme
+    icon?: "ant" | "material" | undefined
+
+    transform?(html: string): string
+
+    after?(): void
+}
+
+/**
  * https://github.com/Vanessa219/vditor#optionspreviewhljs
  */
 export interface IPreviewHLJS {

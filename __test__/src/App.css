@@ -1,7 +1,7 @@
 .App {
     width: 100%;
     box-sizing: border-box;
-    padding: 0 20px;
+    padding: 40px 20px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
