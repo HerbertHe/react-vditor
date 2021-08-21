@@ -10,7 +10,7 @@
   "dependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react-vditor": "^0.1.2",
+    "react-vditor": "^0.2.0",
     "vditor": "^3.8.6"
   },
   "devDependencies": {
