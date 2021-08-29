@@ -2,6 +2,7 @@ import React, { FC, createRef, useEffect } from "react"
 import Vditor from "vditor"
 
 import { defaultWYSIWYGOptions } from "../types/options"
+import { importDefaultTheme } from "../utils"
 import { IVditorEditorProps } from "./Vditor"
 
 export interface IVditorWYSIWYGEditorProps extends IVditorEditorProps {}
@@ -20,6 +21,7 @@ const VditorWYSIWYGEditor: FC<IVditorWYSIWYGEditorProps> = ({
         if (!!bindVditor) {
             bindVditor(vditor)
         }
+        importDefaultTheme(opts)
     }, [])
 
     return <div id={`vditor-editor-wysiwyg-${keyID}`} ref={vditorRef}></div>

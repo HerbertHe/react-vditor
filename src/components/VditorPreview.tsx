@@ -1,6 +1,8 @@
 import React, { createRef, FC, useEffect } from "react"
 import Preivew from "vditor/dist/method.min"
 
+import { importDefaultTheme } from "../utils"
+
 export interface IVditorPreviewProps {
     markdown: string
     options?: IPreviewOptions
@@ -16,6 +18,7 @@ const VditorPreview: FC<IVditorPreviewProps> = ({
 
     useEffect(() => {
         Preivew.preview(previewRef.current, markdown, options).then(() => {
+            importDefaultTheme()
             if (!!customClass) {
                 previewRef.current.classList.add(customClass)
             }

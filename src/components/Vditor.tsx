@@ -2,6 +2,7 @@ import React, { FC, createRef, useEffect } from "react"
 import Vditor from "vditor"
 
 import { IOptions, defaultOptions } from "../types/options"
+import { importDefaultTheme } from "../utils"
 
 export interface IVditorEditorProps {
     keyID: string
@@ -24,6 +25,7 @@ const VditorEditor: FC<IVditorEditorProps> = ({
         if (!!bindVditor) {
             bindVditor(vditor)
         }
+        importDefaultTheme(opts)
     }, [])
 
     return <div id={`vditor-editor-${keyID}`} ref={vditorRef}></div>
